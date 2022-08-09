@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <script type="text/javascript">
+      //   Assessment 1
+      function doHello() {
+        console.log("Hello you");
+      }
+
+      //   Assessment 2
+      function doCombobox() {
+        console.log("Combobox output");
+      }
+    </script>
+    <!-- Assessment 1 -->
+    <label for="assessment1">First Assessment</label>
+    <input
+      type="text"
+      oninput="doHello()"
+      onkeypress="doHello()"
+      id="assessment1"
+    />
+    <br /><br />
+    <!-- Assessment 2 -->
+    <label for="combobox">Second Assessment</label>
+    <select name="combobox" id="combobox" onchange="doCombobox()">
+      <option>First option</option>
+      <option>Second option</option>
+      <option>Third option</option>
+    </select>
+  </body>
+</html>
